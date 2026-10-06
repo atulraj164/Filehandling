@@ -1,0 +1,19 @@
+package file;
+
+import java.io.File;
+
+public class folderDemo {
+
+	public static void main(String[] args) throws Exception{
+		File folder=new File("c://javafile");
+		System.out.println(folder.exists());
+		System.out.println(folder.isDirectory());
+		String [] str=folder.list();
+		for (String s : str) {
+			System.out.println(s);
+			
+		}
+		
+		
+	}
+}
